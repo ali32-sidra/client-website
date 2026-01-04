@@ -1,0 +1,138 @@
+:root{
+  --deep:#8e0038;
+  --gold:#d4af37;
+  --dark:#5a0d24;
+  --bg:#fff5f8;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:'Playfair Display', serif;
+  background:var(--bg);
+  color:#3b0a1f;
+  line-height:1.9;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:linear-gradient(90deg,var(--deep),var(--dark));
+  padding:26px 30px 30px;
+  text-align:center;
+  border-bottom:4px solid var(--gold);
+}
+
+header h1{
+  margin:0;
+  font-size:42px;
+  letter-spacing:2px;
+  color:#fff;
+  text-shadow:
+    0 0 10px rgba(212,175,55,.6),
+    0 0 22px rgba(212,175,55,.4);
+}
+
+/* ===== NAV ===== */
+nav{
+  margin-top:16px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 14px;
+  padding:7px 18px;
+  border-radius:22px;
+  font-size:15px;
+  transition:.35s;
+}
+
+nav a:hover,
+nav a.active{
+  background:linear-gradient(135deg,var(--gold),#b8962e);
+  color:#2b1b00;
+  box-shadow:0 0 18px rgba(212,175,55,.8);
+  font-weight:600;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:30px;
+  padding:12px 30px;
+  background:linear-gradient(135deg,var(--deep),#c2185b);
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-size:15px;
+  box-shadow:0 6px 18px rgba(0,0,0,.3);
+  transition:.35s;
+}
+
+.back-btn:hover{
+  background:linear-gradient(135deg,var(--gold),#b8962e);
+  color:#2b1b00;
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 0 26px rgba(212,175,55,.8);
+}
+
+/* ===== SECTION ===== */
+.section{
+  padding:90px 40px;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.section h2{
+  font-size:34px;
+  margin-bottom:30px;
+  color:var(--deep);
+}
+
+.section h3{
+  font-size:26px;
+  margin-top:65px;
+  margin-bottom:22px;
+  color:#c2185b;
+}
+
+.section p{
+  font-size:18px;
+  margin-bottom:28px;
+  color:#4a0d2e;
+}
+
+/* ===== QUOTE ===== */
+.quote{
+  font-style:italic;
+  font-size:20px;
+  color:#5a1230;
+  margin-top:26px;
+}
+
+/* ===== FOUNDERS ===== */
+.founder-names{
+  font-weight:bold;
+  font-size:21px;
+}
+
+.founder-role{
+  font-size:15px;
+  letter-spacing:1px;
+  color:#555;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:26px;
+  margin-top:80px;
+}
